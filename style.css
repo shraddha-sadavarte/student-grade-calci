@@ -1,0 +1,103 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(3, 103, 97);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-container{
+    height: 60vh;
+    width: 60vw;
+    padding: 40px;
+    background-color: rgb(110, 31, 37);
+    border-radius: 5px;
+    box-shadow: 0 0 15px 5px rgb(87, 33, 37);
+}
+
+.container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.wrapper.five {
+    font-size: 4vh;
+    font-weight: 900;
+    font-family: "Play", sans-serif;
+}
+
+.float-box {
+    margin: auto;
+    transform-style: preserve-3d;
+    transform-origin: left;
+    transform: perspective(100px) rotateY(10deg);
+}
+
+.float {
+    animation: floating 2s linear infinite;
+    margin: 3.5rem auto;
+    padding: 1rem;
+    background-color: rgb(3, 90, 84);
+    color: black;
+    box-shadow: -10px 0 10px 0px rgb(3, 103, 97);
+}
+
+@keyframes floating {
+    0% {
+        transform: translate(0%, 30%);
+    }
+    50% {
+        transform: translate(0%, -30%);
+    }
+    100% {
+        transform: translate(0%, 30%);
+    }
+}
+
+.input form input[type="text"]{
+    background: transparent;
+    border: none;
+    height: 5vh;
+    width: 50vh;
+    border-bottom: 1px solid rgb(3, 103, 97);
+    font-size: 15px;
+    font-weight: 800;
+}
+
+input[type="text"]:hover{
+    cursor: pointer;
+    border: none;
+    border-bottom: 1px solid rgb(3, 103, 97);
+    scale: 1.1;
+}
+
+.calculate{
+    border: none;
+    background: transparent;
+    color: rgb(3, 103, 97);
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.calculate:hover{
+    cursor: pointer;
+    transition: 0.5s;
+    scale: 0.9;
+}
+
+.showdata{
+    padding: 20px;
+    text-align: center;
+    color: black;
+    font-weight: 600;
+}
+
+

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student grade calci</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="main-container">
+    <div class="container">
+        <div class="wrapper five">
+            <span class="float-box">
+                <h3 class="float">Student <br/> Grade<br/> Calci</h3>
+            </span>
+        </div>
+
+        <div class="input">
+            <form>
+                <input type="text" placeholder="Web Designing" id="wd" ><br/><br/>
+                <input type="text" placeholder="Software Engineering" id="se" ><br/><br/>
+                <input type="text" placeholder="Maths" id="math" ><br/><br/>
+                <input type="text" placeholder="Electronics" id="ee" ><br/><br/>
+                <button type="button" class="calculate" onclick="calculateGrade()">Show Percentage</button>
+            </form>
+        </div>
+    </div>
+    
+        <div class="showdata">
+            <p id="showData"> </p>
+        </div>
+    </div>
+    
+
+
+
+    <script src="/app.js"></script>
+</body>
+</html>
